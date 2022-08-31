@@ -1,6 +1,6 @@
 # react-mui
 
-Frontend web app project to learn React.js with the Material UI framework and the Vite build tool.
+Practice project to learn React.js with the Material UI framework and the Vite build tool.
 
 ## Learning resources
 
