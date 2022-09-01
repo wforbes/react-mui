@@ -3,8 +3,9 @@
 import * as React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
-import HomePage from './routes/home';
+import HomePage from './routes/HomePage';
 import ExamplePage from './routes/example';
+import Error404Page from './routes/Error404Page';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -18,6 +19,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="example" element={<ExamplePage />} />
+        <Route path="*" element={<Error404Page />} />
       </Routes>
     </ThemeProvider>
   )
