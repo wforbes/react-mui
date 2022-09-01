@@ -1,0 +1,17 @@
+.appbar-logo-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 0.15em;
+}
+.appbar-logo-lparen {
+  margin: 0 0.1em 0.2em 0.1em !important;
+  display: inline;
+}
+.appbar-logo-dash {
+  margin: 0 0.15em 0.2em 0.1em !important;
+  display: inline;
+}
+.appbar-logo-rparen {
+  margin: 0 0.1em 0.2em 0.15em !important;
+  display: inline;
+}
