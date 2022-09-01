@@ -4,8 +4,8 @@ Practice project to learn React.js with the Material UI framework and the Vite b
 
 ## Learning resources
 
-React 18 Fundamentals on Pluralsign [https://app.pluralsight.com/library/courses/react-18-fundamentals/table-of-contents]((link))
-MUI docs [https://mui.com/material-ui/getting-started/overview/]((link))
+- React 18 Fundamentals on Pluralsight [https://app.pluralsight.com/library/courses/react-18-fundamentals/table-of-contents]((link))
+- MUI docs [https://mui.com/material-ui/getting-started/overview/]((link))
 
 ## Setup/Run commands
 ```
