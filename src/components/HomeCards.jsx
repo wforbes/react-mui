@@ -9,15 +9,69 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 
 const cards = [
-	{ id: 1}, 
-	{ id: 2 }, 
-	{ id: 3 },
-	{ id: 4 },
-	{ id: 5 },
-	{ id: 6 },
-	{ id: 7 },
-	{ id: 8 },
-	{ id: 9 }
+	{
+		id: 1,
+		heading: "Class Components",
+		description: "As the legend goes... way back before February 2019, in order for ancient React developers to modularize their code they had to use Class-based Components...",
+		viewUrl: "class-components",
+		sourceUrl: ""
+	}, 
+	{
+		id: 2,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	}, 
+	{
+		id: 3,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{
+		id: 4,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{ 
+		id: 5,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{
+		id: 6,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{
+		id: 7,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{
+		id: 8,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	},
+	{
+		id: 9,
+		heading: "",
+		description: "",
+		viewUrl: "",
+		sourceUrl: ""
+	}
 ];
 
 
@@ -38,16 +92,15 @@ export default function HomeCards() {
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      {card.heading}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
+                      {card.description}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button href={card.viewUrl} size="small">View</Button>
+                    <Button size="small">{card.sourceUrl}</Button>
                   </CardActions>
                 </Card>
               </Grid>

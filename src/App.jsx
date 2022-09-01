@@ -4,7 +4,7 @@ import * as React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import HomePage from './routes/HomePage';
-import ExamplePage from './routes/example';
+import ClassComponentsPage from './routes/ClassComponentsPage';
 import Error404Page from './routes/Error404Page';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
@@ -18,7 +18,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="example" element={<ExamplePage />} />
+        <Route path="class-components" element={<ClassComponentsPage />} />
         <Route path="*" element={<Error404Page />} />
       </Routes>
     </ThemeProvider>
