@@ -51,12 +51,11 @@ export default function HomePage() {
               variant="h2"
               align="center"
               color="text.primary"
-              gutterBottom
             >
               react-mui
             </Typography>
-            <Typography variant="body1" align="center">
-              <Link href="https://github.com/wforbes/react-mui" color="inherit" target="_blank">Source code on Github</Link>
+            <Typography variant="body1" align="center" gutterBottom>
+              <Link href="https://github.com/wforbes/react-mui" color="inherit" target="_blank">Source code on Github.com</Link>
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               This is a practice project meant to learn React.js with the Material UI framework.
