@@ -1,5 +1,6 @@
 // initial starting point taken from mui template:
 //  https://github.com/mui/material-ui/blob/v5.10.3/docs/data/material/getting-started/templates/album/Album.js
+import './App.css'
 import * as React from 'react'
 import reactLogo from './assets/react.svg'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
@@ -7,6 +8,12 @@ import CssBaseline from '@mui/material/CssBaseline'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+
+import MuiSvg from './assets/mui-svg.jsx'
+import { createSvgIcon } from '@mui/material/utils'
+import SvgIcon from '@mui/material/SvgIcon'
+
+
 
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -19,8 +26,14 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const theme = createTheme();
+
+const MuiIcon = createSvgIcon(
+  <MuiSvg />,
+  'MuiIcon'
+)
 
 export default function App() {
   return (
@@ -28,9 +41,21 @@ export default function App() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <a href="https://reactjs.org" target="_blank">
+          <Typography variant="h4" className="appbar-logo-left-paren">
+            {"("}
+          </Typography>
+          <a href="https://reactjs.org" target="_blank" style={{display:"inline"}}>
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
+          <Typography variant="h4" className="appbar-logo-dash">
+            -
+          </Typography>
+          <a href="https://mui.com" target="_blank" width="32" height="32" style={{display:"inline"}}>
+            <SvgIcon component={MuiIcon} sx={{ width:30, height:32, fill:"white" }} viewBox="0 0 36 32" />
+          </a>
+          <Typography variant="h4" className="appbar-logo-right-paren">
+            {")"}
+          </Typography>
         </Toolbar>
       </AppBar>
       <main>
@@ -45,13 +70,13 @@ export default function App() {
           <Container maxWidth="sm">
           <Grid container spacing={2} justifyContent="center">
               <Grid item>
-              <a href="https://reactjs.org" target="_blank">
-                <img src={reactLogo} className="logo react" alt="React logo" />
-              </a>
+                <a href="https://reactjs.org" target="_blank">
+                  <img src={reactLogo} className="logo react" alt="React logo" />
+                </a>
               </Grid>
               <Grid item>
-                <a href="https://vitejs.dev" target="_blank">
-                  <img src="/vite.svg" className="logo" alt="Vite logo" />
+                <a href="https://mui.com" target="_blank" width="32" height="32">
+                  <SvgIcon component={MuiIcon} sx={{ width:30, height:32, fill:"#007FFF" }} viewBox="0 0 36 32" />
                 </a>
               </Grid>
             </Grid>
