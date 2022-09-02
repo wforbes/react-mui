@@ -25,7 +25,7 @@ npm run build
 ### lint and fix files
 ```
 npm run lint
-``
+```
 
 
 ## Quick links
