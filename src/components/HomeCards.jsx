@@ -15,58 +15,9 @@ const cards = [
 		description: "As the legend goes... way back before February 2019, in order for ancient React developers to modularize their code they had to use Class-based Components...",
 		viewUrl: "class-components",
 		sourceUrl: ""
-	}, 
+	},
 	{
 		id: 2,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	}, 
-	{
-		id: 3,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{
-		id: 4,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{ 
-		id: 5,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{
-		id: 6,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{
-		id: 7,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{
-		id: 8,
-		heading: "",
-		description: "",
-		viewUrl: "",
-		sourceUrl: ""
-	},
-	{
-		id: 9,
 		heading: "",
 		description: "",
 		viewUrl: "",
