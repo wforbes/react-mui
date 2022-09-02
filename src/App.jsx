@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import HomePage from './routes/HomePage';
 import ClassComponentsPage from './routes/ClassComponentsPage';
+import FunctionalComponentsPage from './routes/FunctionalComponentsPage'
 import Error404Page from './routes/Error404Page';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
@@ -19,6 +20,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="class-components" element={<ClassComponentsPage />} />
+        <Route path="functional-components" element={<FunctionalComponentsPage />} />
         <Route path="*" element={<Error404Page />} />
       </Routes>
     </ThemeProvider>
