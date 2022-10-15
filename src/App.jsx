@@ -6,8 +6,7 @@ import Header from './components/Header'
 import HomePage from './routes/HomePage'
 import Error404Page from './routes/Error404Page'
 
-import DemosPage from './routes/Demos'
-import SignupFormDemoPage from './routes/Demos/SignupFormDemoPage'
+import AuthPage from './routes/Auth'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -20,8 +19,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/demos" element={<DemosPage />} />
-        <Route path="/signup-form" element={<SignupFormDemoPage />} />
+        <Route path="/signup" element={<AuthPage />} />
+        <Route path="/login" element={<AuthPage />} />
         <Route path="*" element={<Error404Page />} />
       </Routes>
     </ThemeProvider>

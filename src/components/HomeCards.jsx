@@ -11,17 +11,17 @@ import Typography from '@mui/material/Typography'
 const cards = [
 	{
 		id: 1,
-		heading: 'Sign Up Form',
-		description: '',
+		heading: 'Super awesome thing',
+		description: 'Its so awesome you dont even need to click this dead link',
     imageUrl: '',
-		viewUrl: "signup-form",
+		viewUrl: "#",
 		sourceUrl: ""
 	},
 	{
 		id: 2,
-		heading: "",
-		description: "",
-		viewUrl: "",
+		heading: "Super awesome thing #2",
+		description: "Take your expectations and divide them by zero, its just that awesome",
+		viewUrl: "#",
 		sourceUrl: ""
 	}
 ];
