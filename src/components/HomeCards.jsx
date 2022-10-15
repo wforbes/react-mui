@@ -11,9 +11,10 @@ import Typography from '@mui/material/Typography'
 const cards = [
 	{
 		id: 1,
-		heading: "Class Components",
-		description: "As the legend goes... way back before February 2019, in order for ancient React developers to modularize their code they had to use Class-based Components...",
-		viewUrl: "class-components",
+		heading: 'Sign Up Form',
+		description: '',
+    imageUrl: '',
+		viewUrl: "signup-form",
 		sourceUrl: ""
 	},
 	{

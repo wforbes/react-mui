@@ -1,16 +1,17 @@
 // initial starting point taken from mui template:
 //  https://github.com/mui/material-ui/blob/v5.10.3/docs/data/material/getting-started/templates/album/Album.js
 import * as React from 'react'
-import { Routes, Route } from "react-router-dom";
-import Header from './components/Header';
-import HomePage from './routes/HomePage';
-import ClassComponentsPage from './routes/ClassComponentsPage';
-import FunctionalComponentsPage from './routes/FunctionalComponentsPage'
-import Error404Page from './routes/Error404Page';
+import { Routes, Route } from "react-router-dom"
+import Header from './components/Header'
+import HomePage from './routes/HomePage'
+import Error404Page from './routes/Error404Page'
+
+import DemosPage from './routes/Demos'
+import SignupFormDemoPage from './routes/Demos/SignupFormDemoPage'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
-const theme = createTheme();
+const theme = createTheme()
 
 export default function App() {
   return (
@@ -19,8 +20,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="class-components" element={<ClassComponentsPage />} />
-        <Route path="functional-components" element={<FunctionalComponentsPage />} />
+        <Route path="/demos" element={<DemosPage />} />
+        <Route path="/signup-form" element={<SignupFormDemoPage />} />
         <Route path="*" element={<Error404Page />} />
       </Routes>
     </ThemeProvider>
